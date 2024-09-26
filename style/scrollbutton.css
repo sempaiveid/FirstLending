@@ -1,0 +1,36 @@
+html,body{
+    position: relative;
+}
+.navscroll{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 60px;
+    left: 95%;
+    bottom: 5%;
+z-index: 1;
+justify-content: center;
+
+
+}
+    
+.btn-scroll img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+}
+.btn-scroll:hover{
+    background-color: transparent;
+    transition: 800ms;
+    
+}
+.btn-scroll:hover{
+    width: 100%;
+    height: 100%;
+    background-color: var(--color);
+
+    border-radius: 30px;
+    box-sizing: border-box;
+   
+}

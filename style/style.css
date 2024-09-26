@@ -68,6 +68,7 @@
     height: 100%;
   align-items: center;
     flex-direction: column;
+    gap: 70px;
     
 }
 h1{
@@ -87,7 +88,7 @@ h1{
     padding: 10px 30px;
     font-size: 20px;
     font-weight: 600;
-    margin-top: 90px ;
+
     cursor: pointer;
     word-spacing: 1px;
     text-transform: uppercase;
@@ -162,6 +163,8 @@ h1{
     opacity: 0.9;
     word-spacing: 2px;
     letter-spacing: 0.5px;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -214,7 +217,7 @@ transition: 600ms;
     display: flex;
     gap: 25px;
     font-size: 12px;
-    margin: 40px 50px 100px 50px;  
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -265,4 +268,29 @@ transition: 600ms;
     object-fit: cover;
     position: relative;
     
+}
+/* portfolio */
+.portfolio-header h5{
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    font-size: 37px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+.portfolio-header p{
+    width: 100%;
+    font-size: 15px;
+    opacity: 0.8;
+    text-align: center;
+}
+.portfolio-gallery{
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+ 
 }

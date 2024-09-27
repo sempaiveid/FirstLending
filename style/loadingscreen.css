@@ -1,0 +1,134 @@
+html,body{
+    animation: enableScroll 6s forwards;
+    overflow: hidden;
+}
+
+.background__loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    overflow: hidden;
+    animation: fadeOut 1s forwards ease;
+    animation-delay: 1.5s; 
+   
+}
+.loader__block{
+    width: 50%;
+    background-color: azure;
+    animation: leftBlock 800ms linear forwards;
+    overflow: hidden;
+    animation-duration: 2s;
+}
+.loader__block:last-child{
+    animation: rightBlock .800ms linear forwards;
+    overflow: hidden;
+    animation-duration: 2s;
+
+}
+.preloading__block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 1001;
+    animation: loading 3s ease forwards;
+    animation-duration: 1.9s;
+}
+.progress{
+    width: 200px;
+    height: 12px;
+    border: 1px solid black;
+    border-radius: 4px; ;
+    position: relative;
+}
+.title{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.progress::before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    background-color: var(--color);
+    animation: progressLine 600ms ease forwards;
+    border-radius: 5px;
+}
+@keyframes progressLine{
+    0%{
+        width: 0px;
+
+    }
+    50%{
+        width: 50%;
+    }60%{
+            width: 60%;}
+            70%{
+                width: 70%;}
+               
+                80%{
+                    width: 80%;}
+                 
+                    90%{
+                        width: 90%;}
+            
+    100%{
+        width: calc(100% - 3px);
+    }
+}
+@keyframes leftBlock{
+    0%{
+        transform: translateX(0) ;
+    }
+
+    50%{
+        transform: translateX(0) ;
+    }
+    100%{
+        transform: translateX(-110%) ;
+    }
+}
+@keyframes rightBlock{
+    0%{
+        transform: translateX(0) ;
+    }
+
+    50%{
+        transform: translateX(0) ;
+    }
+    100%{
+        transform: translateX(110%) ;
+       ;
+    }
+}
+@keyframes loading{
+    0%{
+        opacity: 1;
+    }
+100%{
+    opacity: 0;
+    ;
+}
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        z-index: 1000;
+    }
+    100% {
+        opacity: 0;
+        z-index: -1;
+    }
+}
+@keyframes enableScroll {
+    100% {
+        overflow: auto;
+    }
+}

@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/setting.css">
     <link rel="stylesheet" href="./style/scrollbutton.css">
+    <link rel="stylesheet" href="./style/loadingscreen.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +15,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
 <title>Alexis</title>
 </head>
+<!-- loading screen -->
+ <div class="background__loading">
+    <div class="preloading__block">
+        <div class="title">loading...
+        </div>
+        <div class="progress"></div>
+    </div>
+    <div class="loader__block"></div>
+    <div class="loader__block"></div>
+ </div>
 <!-- Header and one section -->
  <div class="navscroll">
     <a href="#about" class="btn-scroll"><img src="./img/arrowup.svg" alt=""></a>
@@ -35,7 +46,7 @@
        <li class="nav-list"><a class="nav-list"  href="#">Contact</a></li>
         </ul>
     </nav>
-    <main>
+    
     <div class="main">
         <h1  class="header-text"> We disign things with love <br>
              and passion</h1>
@@ -53,10 +64,11 @@
             </div>
     </div>
 </header>
+<main>
 <!-- section two -->
  <section id="ourfocus" class="ourfocus">
-    <h2 class="ourfocus-h">Our Focus.</h2>
-    <p class="ourfocus-p">We understand your requirement and provide quality works.</p>
+    <article><h2 class="ourfocus-h">Our Focus.</h2>
+    <p class="ourfocus-p">We understand your requirement and provide quality works.</p></article>
     <section class="ourfocus-card">
     <article class="ourfocus-items">
         <img class="ourfocus-svg" src="./img/webdesign.svg" alt="Web Design Icon" />
@@ -83,7 +95,7 @@
  </section>
  <div class="line1"></div>
  <!-- section three -->
-  <section class="story">
+  <section id="story" class="story">
     <article class="story-head">
         <h2> What we do</h2>
         <h3> STORY ABOUT US</h3>
@@ -93,7 +105,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </p>
-    <div id="story" class="gallery">
+    <div  class="gallery">
         <article class="gallery-item">
             <img src="./img/gallery-three.jpg" alt="Super Team">
             <div class="hover-gallery">
@@ -141,9 +153,8 @@
         <div class="portfolio-image"><img class="image" src="./img/portfolio-7.jpg" alt=""><img class="add" src="./img/add.svg" alt=""><p>PROJECT SEVEN </p></div>
         <div class="portfolio-image"><img class="image" src="./img/portfolio-8.jpg" alt=""><img class="add" src="./img/add.svg" alt=""><p>PROJECT EIGHT </p></div>
         <div class="portfolio-image"><img class="image" src="./img/portfolio-9.jpg" alt=""><img class="add" src="./img/add.svg" alt=""><p>PROJECT NINE </p></div>
+   </article>
     </section>
-</article>
-
 
 </main> 
 </body>

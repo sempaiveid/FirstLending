@@ -1,0 +1,54 @@
+@media screen and (max-width: 800px)
+{
+    .navbar-meny{
+        display: none;
+        }
+h1{
+    font-size: 25px;
+}
+.btn-header{
+    font-size: 15px;
+    padding: 10px 20px
+}
+.itemsmain{
+    flex-direction: column;
+    align-items: start;
+    align-self: center;
+    gap: 5px;
+    margin-left: 70px;
+}
+.items1-p,.items2-p,.items3-p{
+    font-size: 11px;
+
+}
+.items.one,.two,.three{
+    gap: 5px;
+    flex-direction: row;
+
+}
+/* sect1 */
+.ourfocus-card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.ourfocus-items{
+
+    height: 200px;
+    width: 135px;
+}
+.ourfocus-h{
+    font-size: 2em;
+}
+.ourfocus-p{
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+    }

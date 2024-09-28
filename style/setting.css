@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     text-decoration: none;
+    list-style: none;
 
 }
 html,body{
@@ -229,8 +230,14 @@ opacity: 1;
     bottom: 0px;
     height: 0px;
     transition: 900ms;
+    transition-delay: .5s;
     
    
+}
+.portfolio-image{
+    box-shadow: 0 0 20px transparent;
+    transition: 800ms;
+    
 }
 .portfolio-image:hover p{
     opacity: 1;
@@ -243,9 +250,12 @@ opacity: 1;
     width: 100%;
     bottom: 0px;
     height: 40px;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 1);
+
   
 
+}
+.portfolio-image:hover{
+    box-shadow: 0 0 10px black;
 }
 
 .portfolio-image:hover .add{
@@ -261,6 +271,65 @@ opacity: 1;
     opacity: 1;
 
 }
+/* sect out team */
+.ourteam-card:nth-child(1):hover {
+    border: 5px solid var(--coloro);
+    box-shadow: 0 0 30px var(--coloro);
+}
 
+.ourteam-card:nth-child(1):hover .ourteam-card-p {
+    background-color: var(--coloro);
+    color: white; /* Цвет текста */
+}
+
+.ourteam-card:nth-child(1):hover .ourteam-card-p h6,
+.ourteam-card:nth-child(1):hover .ourteam-card-p p {
+    color: white; /* Цвет заголовка и параграфа */
+}
+
+.ourteam-card:nth-child(2):hover {
+    border: 5px solid var(--colorg);
+    box-shadow: 0 0 30px var(--colorg);
+}
+
+.ourteam-card:nth-child(2):hover .ourteam-card-p {
+    background-color: var(--colorg);
+    color: white; /* Цвет текста */
+}
+
+.ourteam-card:nth-child(2):hover .ourteam-card-p h6,
+.ourteam-card:nth-child(2):hover .ourteam-card-p p {
+    color: white; /* Цвет заголовка и параграфа */
+}
+
+.ourteam-card:nth-child(3):hover {
+    border: 5px solid var(--colorp);
+    box-shadow: 0 0 30px var(--colorp);
+}
+
+.ourteam-card:nth-child(3):hover .ourteam-card-p {
+    background-color: var(--colorp);
+    color: white; /* Цвет текста */
+}
+
+.ourteam-card:nth-child(3):hover .ourteam-card-p h6,
+.ourteam-card:nth-child(3):hover .ourteam-card-p p {
+    color: white; /* Цвет заголовка и параграфа */
+}
+
+.ourteam-card:nth-child(4):hover {
+    border: 5px solid var(--color);
+    box-shadow: 0 0 30px var(--color);
+}
+
+.ourteam-card:nth-child(4):hover .ourteam-card-p {
+    background-color: var(--color);
+    color: white; /* Цвет текста */
+}
+
+.ourteam-card:nth-child(4):hover .ourteam-card-p h6,
+.ourteam-card:nth-child(4):hover .ourteam-card-p p {
+    color: white; /* Цвет заголовка и параграфа */
+}
 
 

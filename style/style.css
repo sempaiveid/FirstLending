@@ -284,7 +284,7 @@ transition: 600ms;
     gap: 30px
 }
 .portfolio-image{
-    width: 31%;
+    width: 30%;
     height: 250px;
     box-sizing: border-box;
     position: relative;
@@ -302,6 +302,9 @@ transition: 600ms;
 }
 .portfolio-image p{
     font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
     opacity: 0;
     display: flex;
     align-items: center;
@@ -328,5 +331,178 @@ transition: 600ms;
     opacity: 0;
     transition: 800ms;
     border-radius: 50px;
+}
+/* section ourteam */
+.ourteam{
+    width: 100%;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    position: relative;
+}
+.ourteam-card-p::before {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Позиционирование под элементом */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 105%; /* Длина подчеркивания */
+    height: 3px; /* Толщина подчеркивания */
+    background-color: currentColor; /* Совпадение с цветом текста */
+}
+/* Установка цвета подчеркивания для каждого элемента */
+.ourteam-card:nth-child(1) .ourteam-card-p::before {
+    background-color: var(--coloro); /* Цвет для первого элемента */
+}
 
+.ourteam-card:nth-child(2) .ourteam-card-p::before {
+    background-color: var(--colorg); /* Цвет для второго элемента */
+}
+
+.ourteam-card:nth-child(3) .ourteam-card-p::before {
+    background-color: var(--colorp); /* Цвет для третьего элемента */
+}
+
+.ourteam-card:nth-child(4) .ourteam-card-p::before {
+    background-color: var(--color); /* Цвет для четвертого элемента */
+}
+.ourteam-header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 5%;
+    gap: 10px;
+
+}
+.ourteam-header h5{
+    font-size: 2em;
+}
+.ourteam-header p{
+    font-size: .9em;
+    opacity: .7;
+}
+.ourteam-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.ourteam-gallery{
+    width: 80%;
+    display: flex;
+    gap: 35px;
+}
+.ourteam-card{
+    width: 100%;
+    height: 300px;
+    border: 5px white solid ;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    transition: 800ms;
+}
+
+.ourteam-card-img{
+    height: 80%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.ourteam-card-img img{
+    width: 100%;
+    object-fit:cover;
+    height: 100%;
+    background-position: center;
+}
+.ourteam-card-p{
+    position: relative;
+    padding: 5px;
+    height: calc(20% - 10px);
+    width: calc(100% - 10px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    transition: 800ms;
+}
+.ourteam-card-p h6{
+    font-size: 13px;
+}
+.ourteam-card-p p{
+    font-size: 11px;
+}
+
+.ourteam-card:nth-child(1) .ourteam-card-p h6 {
+    color: var(--coloro); 
+    
+}
+
+.ourteam-card:nth-child(2) .ourteam-card-p h6 {
+    color: var(--colorg); 
+}
+
+.ourteam-card:nth-child(3) .ourteam-card-p h6 {
+    color: var(--colorp); 
+}
+
+.ourteam-card:nth-child(4) .ourteam-card-p h6 {
+    color: var(--color); 
+}
+/* opacity text */
+.title-1{
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    width: 80%;
+    padding: 70px 60px 60px 80px;
+    box-sizing: border-box;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-between;
+}
+.title-text > h6{
+    font-size: 15px;
+}
+.title-text > p{
+    font-size: 14px;
+    color: grey;
+}
+.title-text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social-media{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.social-media a {
+    color: black;
+}
+.social-media li {
+    margin-top: 5px ;
+    margin-bottom: 5px;
+    opacity: .8;
+}
+.social-media img {
+    width: 15px;
+    transform: translateX(-5px) translateY(2px);
+    opacity: .8;
+}
+.share-iconv img{
+width: 35px;
+    transform: translateX(-70px) translateY(-49px);
 }

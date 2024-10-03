@@ -1,8 +1,18 @@
-@media screen and (max-width: 800px)
+@media screen and (max-width: 769px)
 {
-    .navbar-meny{
-        display: none;
+   
+        .burger-menu {
+            display: flex; /
         }
+    
+        .navbar-meny {
+            display: none;  
+        }
+    .navscroll{
+        left: 90%;
+        width: 50px;
+    }
+  
 h1{
     font-size: 25px;
 }
@@ -12,18 +22,19 @@ h1{
 }
 .itemsmain{
     flex-direction: column;
-    align-items: start;
-    align-self: center;
-    gap: 5px;
-    margin-left: 70px;
+    align-items: center;
+    height: 35%;
+    
+    gap: 15px;
+   
 }
 .items1-p,.items2-p,.items3-p{
-    font-size: 11px;
+    font-size: 12px;
 
 }
 .items.one,.two,.three{
     gap: 5px;
-    flex-direction: row;
+    flex-direction: column;
 
 }
 /* sect1 */

@@ -204,6 +204,7 @@ opacity: 1;
 }
 .video:hover .video-nav img {
     opacity: 1;
+    transform: rotate(360deg);
 
 }
 .video:hover .video-nav p {
@@ -267,7 +268,7 @@ opacity: 1;
     left: 50%;
     transform: translate(-50% , -50%);
     -webkit-transform: translate(-50%, -50%);
-    backdrop-filter: blur(5px);
+   filter: drop-shadow( 0px 0px 5px black);
     opacity: 1;
 
 }
@@ -276,60 +277,146 @@ opacity: 1;
     border: 5px solid var(--coloro);
     box-shadow: 0 0 30px var(--coloro);
 }
+.ourteam-card:nth-child(1){
+    position: relative;
+}
+.ourteam-card:nth-child(1)::before {
+    background-color: white;
+    content: ""; 
+    position: absolute; 
+    width: 25%;
+    height: 20%;
+    box-shadow: 0px 0px 1px rgba(165, 165, 165, 0.822);
+    z-index: -1; 
+    bottom: -50%;
+    left: 38%;
+    transform: rotateZ(45deg) scale(0); 
+    transition:  0.9s; 
+}
+.ourteam-card:nth-child(1):hover::before {
+    transform: rotateZ(45deg) scale(1); 
+    z-index: 1; 
+    bottom: -34%;
+}
+
 
 .ourteam-card:nth-child(1):hover .ourteam-card-p {
     background-color: var(--coloro);
-    color: white; /* Цвет текста */
+    color: white; 
 }
 
 .ourteam-card:nth-child(1):hover .ourteam-card-p h6,
 .ourteam-card:nth-child(1):hover .ourteam-card-p p {
-    color: white; /* Цвет заголовка и параграфа */
+    color: white; 
 }
 
 .ourteam-card:nth-child(2):hover {
     border: 5px solid var(--colorg);
     box-shadow: 0 0 30px var(--colorg);
 }
+.ourteam-card:nth-child(2){
+    position: relative;
+}
+.ourteam-card:nth-child(2)::before {
+    background-color: white;
+    content: ""; 
+    position: absolute; 
+    width: 25%;
+    height: 20%;
+    box-shadow: 0px 0px 1px rgba(165, 165, 165, 0.822);
+    z-index: -1; 
+    bottom: -50%;
+    left: 38%;
+    transform: rotateZ(45deg) scale(0); 
+    transition:0.9s; 
+}
+.ourteam-card:nth-child(2):hover::before {
+    transform: rotateZ(45deg) scale(1); 
+    z-index: 1; 
+    bottom: -34%;
+}
 
 .ourteam-card:nth-child(2):hover .ourteam-card-p {
     background-color: var(--colorg);
-    color: white; /* Цвет текста */
+    color: white; 
 }
 
 .ourteam-card:nth-child(2):hover .ourteam-card-p h6,
 .ourteam-card:nth-child(2):hover .ourteam-card-p p {
-    color: white; /* Цвет заголовка и параграфа */
+    color: white; 
 }
 
 .ourteam-card:nth-child(3):hover {
     border: 5px solid var(--colorp);
     box-shadow: 0 0 30px var(--colorp);
 }
+.ourteam-card:nth-child(3){
+    position: relative;
+}
+.ourteam-card:nth-child(3)::before {
+    background-color: white;
+    content: ""; 
+    position: absolute; 
+    width: 25%;
+    height: 20%;
+    box-shadow: 0px 0px 1px rgba(165, 165, 165, 0.822);
+    z-index: -1; 
+    bottom: -50%;
+    left: 38%;
+    transform: rotateZ(45deg) scale(0); 
+    transition:  0.9s; 
+}
+.ourteam-card:nth-child(3):hover::before {
+    transform: rotateZ(45deg) scale(1); 
+    z-index: 1; 
+    bottom: -34%;
+}
+
 
 .ourteam-card:nth-child(3):hover .ourteam-card-p {
     background-color: var(--colorp);
-    color: white; /* Цвет текста */
+    color: white; 
 }
 
 .ourteam-card:nth-child(3):hover .ourteam-card-p h6,
 .ourteam-card:nth-child(3):hover .ourteam-card-p p {
-    color: white; /* Цвет заголовка и параграфа */
+    color: white; 
 }
 
 .ourteam-card:nth-child(4):hover {
     border: 5px solid var(--color);
     box-shadow: 0 0 30px var(--color);
 }
+.ourteam-card:nth-child(4){
+    position: relative;
+}
+.ourteam-card:nth-child(4)::before {
+    background-color: white;
+    content: ""; 
+    position: absolute; 
+    width: 25%;
+    height: 20%;
+    box-shadow: 0px 0px 1px rgba(165, 165, 165, 0.822);
+    z-index: -1; 
+    bottom: -50%;
+    left: 38%;
+    transform: rotateZ(45deg) scale(0); 
+    transition:  0.9s;
+}
+.ourteam-card:nth-child(4):hover::before {
+    transform: rotateZ(45deg) scale(1); 
+    z-index: 1; 
+    bottom: -34%;
+}
 
 .ourteam-card:nth-child(4):hover .ourteam-card-p {
     background-color: var(--color);
-    color: white; /* Цвет текста */
+    color: white; 
+    
 }
 
 .ourteam-card:nth-child(4):hover .ourteam-card-p h6,
 .ourteam-card:nth-child(4):hover .ourteam-card-p p {
-    color: white; /* Цвет заголовка и параграфа */
+    color: white; 
 }
-
 

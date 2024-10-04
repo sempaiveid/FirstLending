@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 1;
+    z-index: 3;
 }
 .logo-header > a{
     font-size: 40px;
@@ -327,7 +327,7 @@ transition: 600ms;
     top: 50%;
     left: 50%;
     transform: translate(-50% , -50%);
-    backdrop-filter: blur(5px);
+    filter: drop-shadow(0 0 5px black);
     opacity: 0;
     transition: 800ms;
     border-radius: 50px;
@@ -461,9 +461,11 @@ transition: 600ms;
     width: 80%;
     padding: 70px 60px 60px 80px;
     box-sizing: border-box;
-    border: 1px black solid;
+    border: 1px rgba(52,52,52,10%) solid;
     display: flex;
     justify-content: space-between;
+    z-index: 2;
+    background-color: #ffffff;
 }
 .title-text > h6{
     font-size: 15px;
@@ -505,4 +507,93 @@ transition: 600ms;
 .share-iconv img{
 width: 35px;
     transform: translateX(-70px) translateY(-49px);
+}
+/* footer */
+footer{
+    background-image: url(../img/footer.png);
+    bottom: 0;
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing:border-box ;
+    background-size: cover;
+    padding: 50px 20% 50px 20%;
+    opacity: .9;
+}
+.footerItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: calc(25% - 40%);
+}
+.footerItems > img{
+    width: 42px;
+}
+.footerItems > h6{
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Poppins ",sans-serif;
+}
+.footerItems > p 
+{
+    text-align: center;
+    color:#ffffff;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    opacity: 0.8;
+
+}
+.cirle{
+    position: relative;
+  display: flex;
+    border-radius: 100px;
+    width: 10px;
+    aspect-ratio: 1;
+    border: 1px solid transparent;
+}
+.cirle::before{
+    transform: translate(18%,18%);
+    position: absolute;
+content: "";
+width: 75%;
+height: 75%;
+background-color: var(--color);
+border-radius: 100px;}
+.cirle.onecircle{
+    border: 1px solid var(--color)
+
+}
+.cirle .onecircle::before{
+    background-color: var(--color);
+
+}
+.cirle.twocircle{
+    border: 1px solid var(--colorg)
+
+}
+.cirle.twocircle::before{
+    background-color: var(--colorg);
+
+}
+.cirle.threecircle{
+    border: 1px solid var(--colorp)
+
+}
+.cirle.threecircle::before{
+    background-color: var(--colorp);
+
+}
+.cirle.fourcircle{
+    border: 1px solid var(--coloro)
+
+}
+.cirle.fourcircle::before{
+    background-color: var(--coloro);
+
 }

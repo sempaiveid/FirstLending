@@ -12,21 +12,21 @@ html,body{
     z-index: 1000;
     display: flex;
     overflow: hidden;
-    animation: fadeOut 1s forwards ease;
-    animation-delay: 1.5s; 
+    animation: fadeOut 4s forwards ease;
+    animation-delay: 4.5s; 
    
 }
 .loader__block{
     width: 50%;
     background-color: azure;
-    animation: leftBlock 800ms linear forwards;
+    animation: leftBlock 2s linear forwards;
     overflow: hidden;
-    animation-duration: 2s;
+    animation-duration: 5s;
 }
 .loader__block:last-child{
-    animation: rightBlock .800ms linear forwards;
+    animation: rightBlock 2s linear forwards;
     overflow: hidden;
-    animation-duration: 2s;
+    animation-duration: 5s;
 
 }
 .preloading__block{
@@ -35,8 +35,8 @@ html,body{
     left: 50%;
     transform: translate(-50% , -50%);
     z-index: 1001;
-    animation: loading 3s ease forwards;
-    animation-duration: 1.9s;
+    animation: loading 5s ease forwards;
+    animation-duration: 6s;
 }
 .progress{
     width: 200px;
@@ -58,7 +58,7 @@ html,body{
     bottom: 2px;
     left: 2px;
     background-color: var(--color);
-    animation: progressLine 600ms ease forwards;
+    animation: progressLine 3s ease forwards;
     border-radius: 5px;
 }
 @keyframes progressLine{

@@ -158,3 +158,87 @@ width: 90%;
     font-size: 11px;
 }
     }
+
+
+    @media screen and (max-width:400px) {
+.navscroll{
+    left: 85%;
+}
+.navbar-meny-burger{
+    font-size: 16px;
+}
+
+        h1{
+            font-size: 27px;
+        }
+        .items1-img,.items2-img,.items3-img{
+            width: 40px;
+        }
+        .items1-p, .items2-p, .items3-p{
+           font-size: 12px; 
+        }
+        .video-nav >h4{
+            font-size: 25px;
+        }
+        .video-nav p{
+            font-size: 12px;
+        }
+        .title-1{
+            padding: 50px 35px;
+        }
+        .footerPage{
+            padding: 50px 10% 50px 10%;
+        }
+        .footerItems{
+            gap: 10px;
+        }
+    }
+    @media (orientation: landscape) {
+        h1{
+        font-size: 25px;
+        }
+        .btn-header{
+            font-size: 16px;
+        }
+        .main{
+            gap: 30px;
+        }
+        .items1-img,.items2-img,.items3-img{
+            width: 40px;
+        }
+        .items1-p, .items2-p, .items3-p{
+            font-size: 13px;
+        }
+        .ourfocus-card {
+            gap: 15px;
+        }
+        .gallery{
+            flex-wrap: wrap;
+            width: 100%;
+        }
+        .video-nav > h4{
+            font-size: 25px;
+        }
+        .video{
+            height: 50vh;
+        }
+        .video-nav{
+            gap: 15px;
+        }
+        .video-nav > p{
+            font-size: 14px;
+        }
+        .ourteam-card{
+            width: 46%;
+            box-sizing: border-box;
+        }
+        .navbar-meny-burger {
+            font-size: 19px;}
+            .burger-menu:hover + .navbar-meny-burger, .navbar-meny-burger:hover{
+                height: 45%;
+                flex-wrap: wrap;
+                border-radius: 0px 0px 10px 10px;
+            }
+    
+    
+        }

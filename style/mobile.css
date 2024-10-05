@@ -168,6 +168,7 @@ width: 90%;
 }
 .navbar-meny-burger{
     font-size: 16px;
+max-height: 45%;
 }
 
         h1{
@@ -198,6 +199,9 @@ width: 90%;
     @media (orientation: landscape)  and ( max-width:932px){
         h1{
         font-size: 25px;
+        }
+        .main{
+            max-height: 100vh;
         }
         .btn-header{
             font-size: 16px;
@@ -237,7 +241,8 @@ width: 90%;
         .navbar-meny-burger {
             font-size: 19px;}
             .burger-menu:hover + .navbar-meny-burger, .navbar-meny-burger:hover{
-                height: 45%;
+                max-height: 45%;
+                display: flex;
                 flex-wrap: wrap;
                 border-radius: 0px 0px 10px 10px;
             }

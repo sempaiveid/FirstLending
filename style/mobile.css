@@ -238,6 +238,7 @@ width: 90%;
             font-size: 19px;}
             .burger-menu:hover + .navbar-meny-burger, .navbar-meny-burger:hover{
                 height: 45%;
+                displey:flex
                 flex-wrap: wrap;
                 border-radius: 0px 0px 10px 10px;
             }

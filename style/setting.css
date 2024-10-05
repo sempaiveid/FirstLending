@@ -163,8 +163,8 @@ video{
     font-family: "Open Sans", sans-serif;
     color: white;
     font-size: 16px;
-    opacity: 0;
-    transition: 900ms;
+    opacity: 1;
+   
     text-align: center;
     width: 100%;
 }
@@ -183,7 +183,7 @@ video{
 }
 .video-nav > img{
     width: 80px;
-    opacity: 0;
+    opacity: 1;
     transition: 800ms;
 
    
@@ -207,10 +207,9 @@ opacity: 1;
     transform: rotate(360deg);
 
 }
-.video:hover .video-nav p {
-    opacity: 1;
 
-}
+
+
 /* portdolio section */
 
 .portfolio-image p{
@@ -415,3 +414,16 @@ opacity: 1;
     color: white; 
 }
 
+.social-media a{
+    cursor:url(https://sweezy-cursors.com/wp-content/uploads/cursor/lamp-light-gradient/lamp-light-gradient-pointer-32x32.png) , pointer;
+    transition: 800ms;
+
+}
+.social-media li{
+    transition: 800ms;
+}
+.social-media  li:hover {
+    border-bottom: 1px solid var(--color);}
+    .social-media  a:hover{
+        color: var(--color);
+    }

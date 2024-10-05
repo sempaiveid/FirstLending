@@ -10,6 +10,7 @@ html,body{
     bottom: 5%;
 z-index: 1;
 justify-content: center;
+cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/lamp-light-gradient/lamp-light-gradient-pointer-32x32.png) , pointer;
 
 
 }
@@ -18,6 +19,7 @@ justify-content: center;
     width: 100%;
     height: 100%;
     z-index: 1;
+    cursor: url(https://sweezy-cursors.com/wp-content/uploads/cursor/lamp-light-gradient/lamp-light-gradient-pointer-32x32.png) , pointer;
     
 }
 .btn-scroll:hover{

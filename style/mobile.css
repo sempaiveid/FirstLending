@@ -195,7 +195,7 @@ width: 90%;
             gap: 10px;
         }
     }
-    @media (orientation: landscape)  and ( max-width:800px){
+    @media (orientation: landscape)  and ( max-width:932px){
         h1{
         font-size: 25px;
         }
@@ -243,4 +243,15 @@ width: 90%;
             }
     
     
+            
+    .header-nav{
+        background-attachment:local;
+    }
+        .burger-menu {
+            display: flex; 
+        }
+    
+        .navbar-meny {
+            display: none;  
+        }
         }

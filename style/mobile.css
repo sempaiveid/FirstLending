@@ -241,8 +241,7 @@ max-height: 45%;
         .navbar-meny-burger {
             font-size: 19px;}
             .burger-menu:hover + .navbar-meny-burger, .navbar-meny-burger:hover{
-                max-height: 45%;
-                display: flex;
+                height: 45%;
                 flex-wrap: wrap;
                 border-radius: 0px 0px 10px 10px;
             }

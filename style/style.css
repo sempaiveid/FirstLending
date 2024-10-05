@@ -3,6 +3,7 @@
 .header-nav{
     background-image: url(../img/background-one.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     height: 100vh;
 
@@ -466,6 +467,7 @@ transition: 600ms;
     justify-content: space-between;
     z-index: 2;
     background-color: #ffffff;
+    margin-bottom:100px ;
 }
 .title-text > h6{
     font-size: 15px;
@@ -520,6 +522,7 @@ footer{
     align-items: center;
     box-sizing:border-box ;
     background-size: cover;
+    background-position: center;
     padding: 50px 20% 50px 20%;
     opacity: .9;
 }

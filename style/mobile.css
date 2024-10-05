@@ -14,22 +14,30 @@
     }
   
 h1{
-    font-size: 25px;
+    font-size: 35px;
+}
+.main{
+    justify-content: center;
+
 }
 .btn-header{
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px 20px
 }
 .itemsmain{
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    height: 35%;
+  width: 100%;
+    height: 45%;
     
     gap: 15px;
    
 }
+.items1-img, .items2-img, .items3-img{
+    width: 50px;
+}
 .items1-p,.items2-p,.items3-p{
-    font-size: 12px;
+    font-size: 17px;
 
 }
 .items.one,.two,.three{
@@ -46,8 +54,8 @@ h1{
 }
 .ourfocus-items{
 
-    height: 200px;
-    width: 135px;
+    height: 220px;
+    width: 115px;
 }
 .ourfocus-h{
     font-size: 2em;
@@ -55,11 +63,98 @@ h1{
 .ourfocus-p{
     font-size: 12px;
 }
+/* portfolio */
+.portfolio-gallery{
+    width: 100%;
+}
+.portfolio-image{
+    width: 48%;
+}
+.ourteam-gallery{
+flex-wrap:wrap ;
+
+}
+.ourteam-card{
+    width: 45%;
+}
+.navbar-meny-burger{
+    font-size: 25px; ;
+}
+
+.gallery {
+flex-wrap: nowrap;
+width: 90%;
+
+}
+.ourteam-card:nth-child(1):hover::before,
+.ourteam-card:nth-child(2):hover::before,
+.ourteam-card:nth-child(3):hover::before,
+.ourteam-card:nth-child(4):hover::before{
+    display: none;
+}
+.ourteam-card-p p{
+    font-size: 14px;
+}
+    }
 
 
+    @media screen  and (max-width:600px) {
+        
+        h1{
+            font-size: 30px;
+        }
+        .itemsmain{
+            flex-direction: column;
 
+        }
+    /* sect two */
+    .ourfocus-items{
+        width: 40%;
+    }
+    .gallery{
+        flex-wrap: wrap;
+    }
+    .gallery-items{
+        width: 330px;
+        height: 210px;
+    }
+    .portfolio-image {
+        width: 80%;
+    }
+    .ourteam-gallery{
+        justify-content: center;
+    }
+    .ourteam-card{
+        width: 100%;
+    }
+.title-1{
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.title-text{
+    width: 100%;
+    align-items: center;
 
+}
+.social-media{
+    align-items: center;
+}
+.share-icon > img{
+    width: 35px;
+   transform:translate(-100px, -70px)
+}
+.footerPage{
+    padding: 50px 15% 50px 15%;
+}
+.footerItems > img{
+    width: 35px;
 
-
-
+}
+.footerItems > h6 {
+    font-size: 15px;
+}
+.footerItems > p{
+    font-size: 11px;
+}
     }

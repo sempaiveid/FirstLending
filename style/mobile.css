@@ -159,6 +159,10 @@ width: 90%;
 .footerItems > p{
     font-size: 11px;
 }
+.navbar-meny-burger{
+    font-size: 16px;
+max-height: 50%;
+}
     }
 
 
@@ -168,7 +172,7 @@ width: 90%;
 }
 .navbar-meny-burger{
     font-size: 16px;
-max-height: 45%;
+max-height: 50%;
 }
 
         h1{
@@ -241,7 +245,7 @@ max-height: 45%;
         .navbar-meny-burger {
             font-size: 19px;}
             .burger-menu:hover + .navbar-meny-burger, .navbar-meny-burger:hover{
-                height: 45%;
+                height: 50%;
                 flex-wrap: wrap;
                 border-radius: 0px 0px 10px 10px;
             }

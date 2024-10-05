@@ -1,8 +1,10 @@
 @media screen and (max-width: 769px)
 {
-   
+    .header-nav{
+        background-attachment:local;
+    }
         .burger-menu {
-            display: flex; /
+            display: flex; 
         }
     
         .navbar-meny {

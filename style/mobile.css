@@ -1,11 +1,15 @@
-@media screen and (max-width: 769px)
+@media screen and (max-width: 768px)
 {
     .header-nav{
         background-attachment:local;
     }
-        .burger-menu {
+        .burger-menu,.navbar-meny-burger {
             display: flex; 
         }
+        .burger-menu:hover+ .navbar-meny-burger,
+.navbar-meny-burger:active{
+    display: flex;
+}
     
         .navbar-meny {
             display: none;  
@@ -160,19 +164,19 @@ width: 90%;
     font-size: 11px;
 }
 .navbar-meny-burger{
-    font-size: 16px;
+    font-size: 19px;
 max-height: 50%;
 }
     }
 
 
-    @media screen and (max-width:400px) {
+    @media screen and (max-width:480px) {
 .navscroll{
     left: 85%;
 }
 .navbar-meny-burger{
-    font-size: 16px;
-max-height: 50%;
+    font-size: 13px;
+height: 50%;
 }
 
         h1{
@@ -226,6 +230,9 @@ max-height: 50%;
             flex-wrap: wrap;
             width: 100%;
         }
+        .portfolio-gallery{
+            width: 100%;
+        }
         .video-nav > h4{
             font-size: 25px;
         }
@@ -242,12 +249,19 @@ max-height: 50%;
             width: 46%;
             box-sizing: border-box;
         }
+        .ourteam-gallery{
+            width: 90%;
+        }
         .navbar-meny-burger {
-            font-size: 19px;}
+            font-size: 22px;}
             .burger-menu:hover + .navbar-meny-burger, .navbar-meny-burger:hover{
-                height: 50%;
+                height: 40%;
                 flex-wrap: wrap;
+                display: flex;
                 border-radius: 0px 0px 10px 10px;
+            }
+            .navscroll{
+                left: 92%;
             }
     
     

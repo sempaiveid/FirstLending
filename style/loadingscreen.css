@@ -12,8 +12,8 @@ html,body{
     z-index: 1000;
     display: flex;
     overflow: hidden;
-    animation: fadeOut 4s forwards ease;
-    animation-delay: 4.5s; 
+    animation: fadeOut 3s forwards ease;
+    animation-delay: 3.5s; 
    
 }
 .loader__block{

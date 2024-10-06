@@ -421,9 +421,12 @@ opacity: 1;
 }
 .social-media li{
     transition: 800ms;
+    border: 1PX solid transparent;
+
 }
 .social-media  li:hover {
     border-bottom: 1px solid var(--color);}
     .social-media  a:hover{
         color: var(--color);
+        transform: scale(105%);
     }

@@ -6,8 +6,9 @@
         .burger-menu,.navbar-meny-burger {
             display: flex; 
         }
-        .burger-menu:hover+ .navbar-meny-burger,
-{
+         .burger-menu:hover + 
+        .navbar-meny-burger,
+         .navbar-meny-burger:hover{
     display: flex;
 }
     

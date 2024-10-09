@@ -204,6 +204,11 @@ height: 50%;
         .footerItems{
             gap: 10px;
         }
+        .burger-menu:hover + 
+        .navbar-meny-burger,
+         .navbar-meny-burger:hover{
+    display: flex;
+}
     }
     @media (orientation: landscape)  and ( max-width:932px){
         h1{

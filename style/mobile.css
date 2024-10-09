@@ -7,7 +7,7 @@
             display: flex; 
         }
         .burger-menu:hover+ .navbar-meny-burger,
-.navbar-meny-burger:active{
+{
     display: flex;
 }
     
